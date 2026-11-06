@@ -1,0 +1,109 @@
+a inside: a colgroup table tbody tfoot thead tr
+abbr inside: colgroup table tbody tfoot thead tr
+address inside: colgroup p table tbody tfoot thead tr
+area inside: colgroup table tbody tfoot thead tr
+article inside: colgroup p table tbody tfoot thead tr
+aside inside: colgroup p table tbody tfoot thead tr
+audio inside: colgroup table tbody tfoot thead tr
+b inside: colgroup table tbody tfoot thead tr
+base inside: colgroup table tbody tfoot thead tr
+bdi inside: colgroup table tbody tfoot thead tr
+bdo inside: colgroup table tbody tfoot thead tr
+blockquote inside: colgroup p table tbody tfoot thead tr
+br inside: colgroup table tbody tfoot thead tr
+button inside: button colgroup table tbody tfoot thead tr
+canvas inside: colgroup table tbody tfoot thead tr
+caption inside: a abbr address article aside audio b bdi bdo blockquote button canvas caption cite code colgroup data datalist dd del details dfn dialog div dl dt em fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup i ins kbd label legend li main map mark menu meter nav object ol optgroup option output p picture pre progress q rp rt ruby s samp search section select selectedcontent slot small span strong sub summary sup tbody td tfoot th thead time tr u ul var video
+cite inside: colgroup table tbody tfoot thead tr
+code inside: colgroup table tbody tfoot thead tr
+col inside: a abbr address article aside audio b bdi bdo blockquote button canvas caption cite code data datalist dd del details dfn dialog div dl dt em fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup i ins kbd label legend li main map mark menu meter nav object ol optgroup option output p picture pre progress q rp rt ruby s samp search section select selectedcontent slot small span strong sub summary sup table tbody td tfoot th thead time tr u ul var video
+colgroup inside: a abbr address article aside audio b bdi bdo blockquote button canvas caption cite code colgroup data datalist dd del details dfn dialog div dl dt em fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup i ins kbd label legend li main map mark menu meter nav object ol optgroup option output p picture pre progress q rp rt ruby s samp search section select selectedcontent slot small span strong sub summary sup tbody td tfoot th thead time tr u ul var video
+data inside: colgroup table tbody tfoot thead tr
+datalist inside: colgroup table tbody tfoot thead tr
+dd inside: colgroup dd dt p table tbody tfoot thead tr
+del inside: colgroup table tbody tfoot thead tr
+details inside: colgroup p table tbody tfoot thead tr
+dfn inside: colgroup table tbody tfoot thead tr
+dialog inside: colgroup p table tbody tfoot thead tr
+div inside: colgroup p table tbody tfoot thead tr
+dl inside: colgroup p table tbody tfoot thead tr
+dt inside: colgroup dd dt p table tbody tfoot thead tr
+em inside: colgroup table tbody tfoot thead tr
+embed inside: colgroup table tbody tfoot thead tr
+fieldset inside: colgroup p table tbody tfoot thead tr
+figcaption inside: colgroup p table tbody tfoot thead tr
+figure inside: colgroup p table tbody tfoot thead tr
+footer inside: colgroup p table tbody tfoot thead tr
+form inside: colgroup form p
+h1 inside: colgroup h1 h2 h3 h4 h5 h6 p table tbody tfoot thead tr
+h2 inside: colgroup h1 h2 h3 h4 h5 h6 p table tbody tfoot thead tr
+h3 inside: colgroup h1 h2 h3 h4 h5 h6 p table tbody tfoot thead tr
+h4 inside: colgroup h1 h2 h3 h4 h5 h6 p table tbody tfoot thead tr
+h5 inside: colgroup h1 h2 h3 h4 h5 h6 p table tbody tfoot thead tr
+h6 inside: colgroup h1 h2 h3 h4 h5 h6 p table tbody tfoot thead tr
+header inside: colgroup p table tbody tfoot thead tr
+hgroup inside: colgroup p table tbody tfoot thead tr
+hr inside: colgroup p table tbody tfoot thead tr
+i inside: colgroup table tbody tfoot thead tr
+iframe inside: colgroup table tbody tfoot thead tr
+img inside: colgroup table tbody tfoot thead tr
+input inside: colgroup select table tbody tfoot thead tr
+ins inside: colgroup table tbody tfoot thead tr
+kbd inside: colgroup table tbody tfoot thead tr
+label inside: colgroup table tbody tfoot thead tr
+legend inside: colgroup table tbody tfoot thead tr
+li inside: colgroup li p table tbody tfoot thead tr
+link inside: colgroup table tbody tfoot thead tr
+main inside: colgroup p table tbody tfoot thead tr
+map inside: colgroup table tbody tfoot thead tr
+mark inside: colgroup table tbody tfoot thead tr
+menu inside: colgroup p table tbody tfoot thead tr
+meta inside: colgroup table tbody tfoot thead tr
+meter inside: colgroup table tbody tfoot thead tr
+nav inside: colgroup p table tbody tfoot thead tr
+noscript inside: colgroup table tbody tfoot thead tr
+object inside: colgroup table tbody tfoot thead tr
+ol inside: colgroup p table tbody tfoot thead tr
+optgroup inside: colgroup option table tbody tfoot thead tr
+option inside: colgroup option table tbody tfoot thead tr
+output inside: colgroup table tbody tfoot thead tr
+p inside: colgroup p table tbody tfoot thead tr
+picture inside: colgroup table tbody tfoot thead tr
+pre inside: colgroup p table tbody tfoot thead tr
+progress inside: colgroup table tbody tfoot thead tr
+q inside: colgroup table tbody tfoot thead tr
+rp inside: colgroup table tbody tfoot thead tr
+rt inside: colgroup table tbody tfoot thead tr
+ruby inside: colgroup table tbody tfoot thead tr
+s inside: colgroup table tbody tfoot thead tr
+samp inside: colgroup table tbody tfoot thead tr
+script inside: colgroup
+search inside: colgroup p table tbody tfoot thead tr
+section inside: colgroup p table tbody tfoot thead tr
+select inside: colgroup select table tbody tfoot thead tr
+selectedcontent inside: colgroup table tbody tfoot thead tr
+slot inside: colgroup table tbody tfoot thead tr
+small inside: colgroup table tbody tfoot thead tr
+source inside: colgroup table tbody tfoot thead tr
+span inside: colgroup table tbody tfoot thead tr
+strong inside: colgroup table tbody tfoot thead tr
+style inside: colgroup
+sub inside: colgroup table tbody tfoot thead tr
+summary inside: colgroup p table tbody tfoot thead tr
+sup inside: colgroup table tbody tfoot thead tr
+table inside: colgroup p table tbody tfoot thead tr
+tbody inside: a abbr address article aside audio b bdi bdo blockquote button canvas caption cite code colgroup data datalist dd del details dfn dialog div dl dt em fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup i ins kbd label legend li main map mark menu meter nav object ol optgroup option output p picture pre progress q rp rt ruby s samp search section select selectedcontent slot small span strong sub summary sup tbody td tfoot th thead time tr u ul var video
+td inside: a abbr address article aside audio b bdi bdo blockquote button canvas caption cite code colgroup data datalist dd del details dfn dialog div dl dt em fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup i ins kbd label legend li main map mark menu meter nav object ol optgroup option output p picture pre progress q rp rt ruby s samp search section select selectedcontent slot small span strong sub summary sup table tbody td tfoot th thead time u ul var video
+textarea inside: colgroup table tbody tfoot thead tr
+tfoot inside: a abbr address article aside audio b bdi bdo blockquote button canvas caption cite code colgroup data datalist dd del details dfn dialog div dl dt em fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup i ins kbd label legend li main map mark menu meter nav object ol optgroup option output p picture pre progress q rp rt ruby s samp search section select selectedcontent slot small span strong sub summary sup tbody td tfoot th thead time tr u ul var video
+th inside: a abbr address article aside audio b bdi bdo blockquote button canvas caption cite code colgroup data datalist dd del details dfn dialog div dl dt em fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup i ins kbd label legend li main map mark menu meter nav object ol optgroup option output p picture pre progress q rp rt ruby s samp search section select selectedcontent slot small span strong sub summary sup table tbody td tfoot th thead time u ul var video
+thead inside: a abbr address article aside audio b bdi bdo blockquote button canvas caption cite code colgroup data datalist dd del details dfn dialog div dl dt em fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup i ins kbd label legend li main map mark menu meter nav object ol optgroup option output p picture pre progress q rp rt ruby s samp search section select selectedcontent slot small span strong sub summary sup tbody td tfoot th thead time tr u ul var video
+time inside: colgroup table tbody tfoot thead tr
+title inside: colgroup table tbody tfoot thead tr
+tr inside: a abbr address article aside audio b bdi bdo blockquote button canvas caption cite code colgroup data datalist dd del details dfn dialog div dl dt em fieldset figcaption figure footer form h1 h2 h3 h4 h5 h6 header hgroup i ins kbd label legend li main map mark menu meter nav object ol optgroup option output p picture pre progress q rp rt ruby s samp search section select selectedcontent slot small span strong sub summary sup table td th time tr u ul var video
+track inside: colgroup table tbody tfoot thead tr
+u inside: colgroup table tbody tfoot thead tr
+ul inside: colgroup p table tbody tfoot thead tr
+var inside: colgroup table tbody tfoot thead tr
+video inside: colgroup table tbody tfoot thead tr
+wbr inside: colgroup table tbody tfoot thead tr
