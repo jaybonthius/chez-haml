@@ -1,4 +1,4 @@
 (lambda (title)
-  (html
+  (haml
     (:p.card
       (:h2 title))))

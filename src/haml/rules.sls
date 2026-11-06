@@ -1,4 +1,4 @@
-(library (html rules)
+(library (haml rules)
   (export
     ;; elements
     html-element-name? svg-element-name? svg-only-element-name? custom-element-name?

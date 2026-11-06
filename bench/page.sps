@@ -1,26 +1,26 @@
-(import (chezscheme) (html))
+(import (chezscheme) (haml))
 
 (define (page items)
-  (html
+  (haml
     (:html ([lang "en"])
       (:head (:title "SXML benchmark"))
       (:body.page
         (:h1 "Benchmark")
         (map (lambda (i)
-               (html
+               (haml
                  (:article.row ([data-index i])
                    (:h2 "Item " i)
                    (:p "The quick brown fox jumps over the lazy dog.")
                    (:a ([href "/items/" i]) "details"))))
              items)))))
 
-(define (link-view s) (html (:a ([href "/c/" s]) s)))
-(define (cell-view s) (html (:td.cell ([title s]) (link-view s))))
-(define (row-view r) (html (:tr ([data-id (car r)]) (map cell-view (cdr r)))))
+(define (link-view s) (haml (:a ([href "/c/" s]) s)))
+(define (cell-view s) (haml (:td.cell ([title s]) (link-view s))))
+(define (row-view r) (haml (:tr ([data-id (car r)]) (map cell-view (cdr r)))))
 (define (card-view c)
-  (html (:div.card (:h3 (car c)) (:table (map row-view (cdr c))))))
-(define (section-view s) (html (:section (:h2 (car s)) (map card-view (cdr s)))))
-(define (deep-page sections) (html (:html (:body (:main (map section-view sections))))))
+  (haml (:div.card (:h3 (car c)) (:table (map row-view (cdr c))))))
+(define (section-view s) (haml (:section (:h2 (car s)) (map card-view (cdr s)))))
+(define (deep-page sections) (haml (:html (:body (:main (map section-view sections))))))
 
 (define items (iota 50))
 

@@ -1,13 +1,13 @@
-(import (chezscheme) (check) (support) (html))
+(import (chezscheme) (check) (support) (haml))
 
 (define (page items)
-  (html
+  (haml
     (:html ([lang "en"])
       (:head (:title "SXML benchmark"))
       (:body.page
         (:h1 "Benchmark")
         (map (lambda (i)
-               (html
+               (haml
                  (:article.row ([data-index i])
                    (:h2 "Item " i)
                    (:p "The quick brown fox jumps over the lazy dog.")

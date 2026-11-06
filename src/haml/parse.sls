@@ -1,13 +1,13 @@
-(library (html haml)
-  (export parse-html)
-  (import (chezscheme) (html markup))
+(library (haml parse)
+  (export parse-haml)
+  (import (chezscheme) (haml markup))
 
-  (define (parse-html form)
+  (define (parse-haml form)
     (syntax-case form ()
       [(_ child ...) (parse-children form #'(child ...) '())]))
 
   (define (bad form message subform)
-    (syntax-violation 'html message form subform))
+    (syntax-violation 'haml message form subform))
 
   (define (colon-name? x)
     (and (identifier? x)

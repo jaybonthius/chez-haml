@@ -1,5 +1,5 @@
 (lambda (item)
-  (html
+  (haml
     (:article
       (:h2 "Item "
         (cdr item)))))

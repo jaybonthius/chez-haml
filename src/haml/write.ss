@@ -10,7 +10,7 @@
   (raise
     (apply condition
       (make-assertion-violation)
-      (make-who-condition 'html)
+      (make-who-condition 'haml)
       (make-message-condition message)
       (make-irritants-condition (list value))
       (if location
@@ -20,9 +20,9 @@
           '()))))
 
 (define (raise-changed value)
-  (assertion-violation 'html "value changed after the form was evaluated" value))
+  (assertion-violation 'haml "value changed after the form was evaluated" value))
 
-(include "html/escape.ss")
+(include "haml/escape.ss")
 
 (define (write-digits port n)
   (when (fx>= n 10) (write-digits port (fxquotient n 10)))

@@ -1,4 +1,4 @@
 (lambda (formatter cell-value row col)
-  (html
+  (haml
     (:tr
       (:td ((formatter col) (cell-value row col))))))

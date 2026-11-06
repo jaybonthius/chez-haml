@@ -1,8 +1,8 @@
 (library (support)
   (export evaluate render compile-error rejects? contains? condition-text raises-with?)
-  (import (chezscheme) (html))
+  (import (chezscheme) (haml))
 
-  (define env (environment '(chezscheme) '(html)))
+  (define env (environment '(chezscheme) '(haml)))
 
   (define (evaluate datum) (eval datum env))
 

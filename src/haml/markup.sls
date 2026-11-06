@@ -1,4 +1,4 @@
-(library (html markup)
+(library (haml markup)
   (export
     make-element element? element-form element-tag element-name element-classes
     element-attributes element-children

@@ -1,6 +1,6 @@
-(library (html compile)
+(library (haml compile)
   (export compile-html)
-  (import (chezscheme) (html markup) (html rules))
+  (import (chezscheme) (haml markup) (haml rules))
 
   (include "escape.ss")
 
@@ -226,7 +226,7 @@
     (define (helper name) (datum->syntax here name))
 
     (define (bad message subform)
-      (syntax-violation 'html message form subform))
+      (syntax-violation 'haml message form subform))
 
     (define (location-constant e)
       (let ([a (syntax->annotation e)])
@@ -250,7 +250,7 @@
       #`(syntax-rules () [(_ k f) (k #,(datum->syntax here context) f)]))
 
     ;; Tests, case keys, for-each lists and attribute values are not written
-    ;; where they appear, so html forms inside them are checked as at the top.
+    ;; where they appear, so haml forms inside them are checked as at the top.
     (define (at-top e place)
       (if (or (not (place-context place)) (atom-syntax? e))
           e
@@ -264,7 +264,7 @@
                         (exists (lambda (k) (free-identifier=? #'h k))
                           (list #'quote #'quasiquote #'syntax #'quasisyntax html-id)))
              (when (markup-tag? #'h)
-               (bad "markup inside a Scheme expression needs its own (html …)" x))
+               (bad "markup inside a Scheme expression needs its own (haml …)" x))
              (let loop ([x x])
                (syntax-case x ()
                  [(a . d) (begin (walk #'a) (loop #'d))]

@@ -1,6 +1,6 @@
-(import (chezscheme) (check) (support) (html))
+(import (chezscheme) (check) (support) (haml))
 
-(define env (environment '(chezscheme) '(html)))
+(define env (environment '(chezscheme) '(haml)))
 
 (define (load-fixture file)
   (let ([value #f])
@@ -38,7 +38,7 @@
     (check (has? (condition-text c) "at line 5, char 9 of tests/fixtures/value-error.ss"))))
 
 (test "a value error in a compiled program reports its line"
-  (let ([c (guard (c [#t c]) (let ([v 'bad]) (html (:p v))))])
+  (let ([c (guard (c [#t c]) (let ([v 'bad]) (haml (:p v))))])
     (check (has? (condition-text c) "at line 41, char 56 of tests/location-test.sps"))))
 
 (test-exit)
