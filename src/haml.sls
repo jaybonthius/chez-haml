@@ -1,6 +1,6 @@
 (library (haml)
-  (export haml html? write-html html->bytevector html->string raw-html)
-  (import (chezscheme) (haml parse) (haml compile))
+  (export haml html? write-html html->bytevector html->string raw-html html->sxml)
+  (import (chezscheme) (haml parse) (haml compile) (haml read))
 
   ;; The record and writers share this library with the macro so that the
   ;; generated code reaches them without their being exported: an exported
@@ -22,4 +22,12 @@
   (define-syntax haml
     (lambda (x)
       (syntax-case x ()
-        [(_ child ...) #`(html-context compile-in-context #,x)]))))
+        [(_ child ...) #`(html-context compile-in-context #,x)])))
+
+  (define (html->sxml markup)
+    (read-markup 'html->sxml
+      (cond
+        [(html? markup) (html->string markup)]
+        [(string? markup) markup]
+        [(bytevector? markup) (utf8->string markup)]
+        [else (assertion-violation 'html->sxml "not html, a string or a bytevector" markup)]))))

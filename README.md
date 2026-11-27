@@ -93,6 +93,14 @@ Any other form is a Scheme expression. Its value is written by type: a string, a
 | `(html->bytevector h)` | the UTF-8 bytes |
 | `(html->string h)` | the text |
 | `(raw-html s)` | a value that writes the string or UTF-8 bytevector `s` unchecked |
+| `(html->sxml x)` | what `x`, an `html` value or the text or UTF-8 bytes it wrote, reads as in SXML |
+
+`html->sxml` reads what this library writes, so a test can check markup by its elements instead of its text. The result is `(*TOP* node ...)`. An element is `(name (@ (attribute "value") ...) child ...)`, with symbols for names and the `@` list left out when there are no attributes; text is a string; a bare attribute's value is `""`; a document starts with `(*DECL* DOCTYPE html)`. Void elements have no end tag, `script` and `style` text is read as written, and the newline written after a `pre` or `textarea` start tag is dropped, as an HTML parser does. Anything this library does not write, such as a comment, another escape, a single-quoted attribute or `/>`, raises. A program read in `#!r6rs` mode writes the symbol `@` as `\x40;`.
+
+```scheme
+(html->sxml (haml (:p.note ([title "a < b"]) "x" (:br))))
+;; (*TOP* (p (@ (class "note") (title "a < b")) "x" (br)))
+```
 
 ## Checked when the code compiles
 
